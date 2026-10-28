@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App de Notas - Rediseñada</title>
+  <link rel="stylesheet" href="estilos1.css">
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Gestor de Notas</h1>
+    
+    <!-- Mensaje de estado visible (UX) -->
+    <div id="feedback" class="feedback oculto" role="status" aria-live="polite"></div>
+
+    <form id="form-nota" class="formulario">
+      <div class="campo">
+        <label for="texto-nota">Escribe una nueva nota:</label>
+        <textarea id="texto-nota" placeholder="Ej. Estudiar para el examen de UX..." required></textarea>
+      </div>
+      <button type="submit" id="btn-guardar" class="btn btn-principal" disabled>Agregar Nota</button>
+    </form>
+
+    <section class="seccion-notas">
+      <h2>Mis Notas</h2>
+      <ul id="lista-notas" class="lista-notas"></ul>
+    </section>
+  </main>
+
+  <script src="app1.js"></script>
+</body>
+</html>
